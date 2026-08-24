@@ -1,0 +1,4 @@
+# Keep machine-specific paths out of the tracked gradle.properties file.
+# Copy these values to ~/.gradle/gradle.properties or pass them with -P.
+intellijLocalPath=D:/Program Files/JetBrains/IntelliJ IDEA 2026.1
+sonarLintPluginPath=C:/Users/<user>/AppData/Roaming/JetBrains/IntelliJIdea2026.1/plugins/sonarlint-intellij
