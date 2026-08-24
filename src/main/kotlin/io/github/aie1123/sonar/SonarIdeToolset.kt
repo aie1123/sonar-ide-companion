@@ -1,4 +1,4 @@
-package com.cmi.codex.sonar
+package io.github.aie1123.sonar
 
 import com.google.gson.JsonArray
 import com.google.gson.JsonObject

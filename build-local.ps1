@@ -25,7 +25,7 @@ $jarRoots = @(
 $classpath = [string]::Join(';', ($jarRoots | ForEach-Object {
     (Get-ChildItem -LiteralPath $_ -Filter "*.jar" | Select-Object -ExpandProperty FullName)
 })).Replace('\', '/')
-$sourcePath = Join-Path $PSScriptRoot "src\main\kotlin\com\cmi\codex\sonar\SonarIdeToolset.kt"
+$sourcePath = Join-Path $PSScriptRoot "src\main\kotlin\io\github\aie1123\sonar\SonarIdeToolset.kt"
 $compilerJar = Join-Path $kotlinHome "lib\kotlin-compiler.jar"
 $javaPath = if ($env:JAVA_HOME) {
     Join-Path $env:JAVA_HOME "bin\java.exe"

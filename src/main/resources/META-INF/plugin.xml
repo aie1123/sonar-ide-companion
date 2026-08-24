@@ -1,7 +1,7 @@
 <idea-plugin>
-  <id>com.cmi.codex.sonar-ide-companion</id>
+  <id>io.github.aie1123.sonar-ide-companion</id>
   <name>SonarQube for IDE MCP Companion</name>
-  <vendor email="" url="">Local Codex integration</vendor>
+  <vendor url="https://github.com/aie1123">aie1123</vendor>
   <description><![CDATA[
     Exposes read-only SonarQube for IDE findings to the IntelliJ MCP server.
     Findings remain local to the active IDE project and are never sent to a remote service by this plugin.
@@ -12,6 +12,6 @@
   <depends>com.intellij.mcpServer</depends>
   <depends>org.sonarlint.idea</depends>
   <extensions defaultExtensionNs="com.intellij">
-    <mcpServer.mcpToolset implementation="com.cmi.codex.sonar.SonarIdeToolset" />
+    <mcpServer.mcpToolset implementation="io.github.aie1123.sonar.SonarIdeToolset" />
   </extensions>
 </idea-plugin>

@@ -1,4 +1,4 @@
-package com.cmi.codex.sonar
+package io.github.aie1123.sonar
 
 import java.nio.file.Files
 import java.nio.file.NoSuchFileException

@@ -3,7 +3,7 @@ plugins {
     id("org.jetbrains.intellij.platform") version "2.7.0"
 }
 
-group = "com.cmi.codex"
+group = "io.github.aie1123.sonar"
 version = providers.gradleProperty("pluginVersion").get()
 
 fun requiredLocalPath(propertyName: String, environmentName: String): String =
