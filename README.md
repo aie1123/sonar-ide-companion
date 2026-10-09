@@ -72,6 +72,11 @@ responses instead of leaking `NoSuchFileException` as an IDEA severe error. Call
 exact project-relative paths from Git, the IDE, or the file system rather than infer directories
 from Java package names.
 
+Version 0.1.3 widens the supported IDE range to the 262 build line (`until-build="262.*"`), so the
+plugin loads on IntelliJ IDEA 2026.2 instead of being rejected as incompatible. Nothing else
+changed: the toolset, its responses, and its data boundaries are identical to 0.1.2. Restart IDEA
+after installing because it does not hot-reload the replacement JAR.
+
 After restarting IDEA, confirm that SonarQube for IDE is installed, a project is open, and at
 least one analysis has completed. The global MCP Server must also be enabled manually under
 `Tools > MCP Server`, including any JetBrains permission prompt. This plugin never changes those

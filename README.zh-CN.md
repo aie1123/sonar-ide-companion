@@ -64,6 +64,10 @@ gradle buildPlugin --no-daemon
 `NoSuchFileException` 作为 IDEA SEVERE ERROR 泄漏。调用方必须从 Git、IDE 或文件系统读取
 并确认真实项目相对路径，不能根据 Java package 名手工推测目录。
 
+0.1.3 把支持的 IDE 版本上限放宽到 262 构建线（`until-build="262.*"`），使插件能在
+IntelliJ IDEA 2026.2 上加载，而不再被判定为不兼容。除此之外没有其他改动：工具集、返回结构
+与数据边界与 0.1.2 完全一致。安装后仍需重启 IDEA，旧进程不会热加载新 jar。
+
 安装后重启 IDEA，并确认 SonarQube for IDE 已安装、项目已打开且已完成一次分析。全局
 MCP Server 也必须由用户在 `Tools > MCP Server` 手动启用并确认 JetBrains 的权限提示；
 插件不会静默修改 IDEA 配置。
