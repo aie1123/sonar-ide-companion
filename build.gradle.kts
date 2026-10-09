@@ -45,7 +45,7 @@ intellijPlatform {
         version = project.version.toString()
         ideaVersion {
             sinceBuild = "261.22158.277"
-            untilBuild = "261.*"
+            untilBuild = "262.*"
         }
     }
 }
@@ -57,7 +57,7 @@ kotlin {
 tasks {
     patchPluginXml {
         sinceBuild.set("261.22158.277")
-        untilBuild.set("261.*")
+        untilBuild.set("262.*")
     }
 
     test {
